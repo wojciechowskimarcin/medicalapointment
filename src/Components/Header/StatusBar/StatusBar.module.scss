@@ -2,18 +2,43 @@
   display: flex;
   font-size: 13px;
   justify-content: space-between ;
-  padding: 0px 0px 20px 5px;
+  padding: 0px 0px 10px 5px;
+  margin-top: 5px;
   justify-content: center;
+
+  div:nth-child(1){
+    width:85%;
+    justify-content: start;
+  }
+
+  .row{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+  }
+  .row>img{
+    margin:5px;
+  }
 }
-.statusBar div:nth-child(1){
-  width:85%;
-  justify-content: start;
+
+
+
+
+@media (min-width: 120px) and (max-width: 320px) {
+  .statusBar div{
+    width:50%;
+  }
 }
-.row{
-  display: flex;
-  width: 25%;
-  justify-content: space-between;
+@media (min-width: 481px) {
+  .statusBar{
+    display: none;
+  }
 }
-.row>img{
-  margin:5px;
+@media (min-width: 1024px){
+
+  header{
+    border-radius: 0;
+  }
+
 }
+

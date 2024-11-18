@@ -1,0 +1,12 @@
+/*
+Responsive sizes:
+320px, 480px, 600px, 768px, 900px, 1024px, 1200px
+*/
+
+
+$baseHeaderColor: rgb(40,40,40);
+
+
+@mixin shadow(){
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}

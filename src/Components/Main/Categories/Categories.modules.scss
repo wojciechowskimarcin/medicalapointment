@@ -1,0 +1,84 @@
+@import "../../../App.module.scss";
+
+$headerBackground: #66B2FF;
+h2 {
+  font-size: 2em;
+  color: $baseHeaderColor;
+  margin:0.5em 0;
+}
+.categories{
+  flex-direction: column;
+}
+.categoryGroup{
+  display: flex;
+  list-style-type: none;
+width: 70%;
+  justify-content: space-between;
+  margin:0 auto;
+}
+.categoryElement{
+  width:70px;
+  height:70px;
+  background-color: white;
+  border-radius: 50%;
+  @include shadow();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.categoryElement:hover{
+  background-color: $headerBackground;
+}
+.categoryElement a {
+  width:25px;
+  height:25px;
+  display: block;
+  background-size: contain;
+}
+@media (min-width: 100px) and (max-width: 219px) {
+
+}
+
+@media (max-width: 480px) {
+  .categoryGroup {
+    width:100%;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 600px) {
+  h2{
+    padding: 0 0.5em;
+  }
+  .categories{
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+
+  .categories{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .listDoctors{
+    display: flex;
+    flex-direction: row;
+
+    li{
+      margin-right: 0.5em;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .categories {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
